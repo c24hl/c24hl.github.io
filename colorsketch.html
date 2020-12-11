@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var colors = ["blue", "red", "yellow", "purple", "green", "gold", "black", "purple"];
+
+    random.addEventListener("click",
+    	function changeColor() {
+    	var x = Math.round(Math.random()*6)
+        document.body.style.backgroundColor = colors[x]
+
+    })
+
+    changeColor();
+    </script>
+</body>
+
+</html>
