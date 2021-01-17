@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>third codesketch!</title>
+
+	<style type="text/css">
+		
+.potato{
+	width:100px;
+			height:100px;
+			background-image:url(potato.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			display:inline-block;
+			position:absolute;
+			transition:.4s;
+}
+
+body{
+	background-color: rgb(250,250,150);
+	background-size: cover;
+}
+
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function makePotato(){
+			var potato = document.createElement("div");
+			document.body.appendChild(potato);
+			potato.classList.add("potato");
+			function position () {
+				potato.style.left = Math.random()*1200 + "px";
+				potato.style.top = Math.random()*1200 + "px";
+		};
+		setInterval(position, 500)
+}
+		setInterval(makePotato, 1000)
+
+	</script>
+
+<div class="potato"></div>
+<div class="potato"></div>
+<div class="potato"></div>
+</body>
+</html>
